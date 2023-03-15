@@ -41,12 +41,12 @@ const Discover = () => {
   //   });
   // }, []);
   return (
-    <SafeAreaView className="flex-1 bg-red-500 relative">
+    <SafeAreaView className="flex-1 bg-red-50 relative">
       <View className="flex-row items-center justify-between px-8 py-3">
         <View>
           <Text className="text-[40px] text-[#0B646B] font-bold">Discover</Text>
           <Text className="text-[#527283] text-[32px] font-semibold">
-            The Beauty Today
+            The Krunal Today
           </Text>
         </View>
         <View className="w-12 h-12 bg-gray-500 rounded-md items-center justify-center shadow-lg">
