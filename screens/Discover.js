@@ -41,7 +41,7 @@ const Discover = () => {
   //   });
   // }, []);
   return (
-    <SafeAreaView className="flex-1 bg-red-50 relative">
+    <SafeAreaView className="flex-1 bg-red-500 relative">
       <View className="flex-row items-center justify-between px-8 py-3">
         <View>
           <Text className="text-[40px] text-[#0B646B] font-bold">Discover</Text>
