@@ -46,7 +46,7 @@ const Discover = () => {
         <View>
           <Text className="text-[40px] text-[#0B646B] font-bold">Discover</Text>
           <Text className="text-[#527283] text-[32px] font-semibold">
-            The Krunal Today
+            The Beauty In You
           </Text>
         </View>
         <View className="w-12 h-12 bg-gray-500 rounded-md items-center justify-center shadow-lg">
