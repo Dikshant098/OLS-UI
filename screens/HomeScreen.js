@@ -49,7 +49,7 @@ const HomeScreen = () => {
           className="w-full h-full object-cover mt-8 mr-4 "
         />
         <TouchableOpacity
-        onPress={()=>navigation.navigate("Discover")}
+        onPress={()=>navigation.navigate("Login")}
           className="absolute bottom-40 w-24 h-24 border-l-2 border-r-2 border-t-4 
                         border-[#00BCC9] rounded-full justify-center items-center"
         >
