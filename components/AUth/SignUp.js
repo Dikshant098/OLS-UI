@@ -1,12 +1,52 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { View, Text, Image, TouchableOpacity, TextInput, Button } from "react-native";
+import React, { useLayoutEffect } from "react";
+import { useNavigation } from "@react-navigation/native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { StyleSheet } from "react-native";
 
-const SignUp = () => {
+const HomeScreen = () => {
+  const navigation = useNavigation();
+
+  useLayoutEffect(() => {
+    navigation.setOptions({
+      headerShown: false,
+    });
+  }, []);
   return (
-    <View>
-      <Text>SignUp</Text>
-    </View>
-  )
-}
+    <SafeAreaView className="bg-white flex-1 relative" style={styles.container}>
+      <TextInput style={styles.input} placeholder="Enter Your Full Name" />
+      <TextInput style={styles.input} placeholder="Enter Your Mobile No." />
+      <TextInput style={styles.input} placeholder="Enter Your Age" />
+      <TextInput style={styles.input} placeholder="Enter Your Gender" />
+      <Button title="Submit"
+        onPress={() => navigation.navigate("Discover")}
+      ></Button>
+    </SafeAreaView>
+  );
+};
 
-export default SignUp
+export default HomeScreen;
+
+const styles = StyleSheet.create({
+  container:{
+      marginTop:30,
+      padding:20,
+      backgroundColor:"grey",
+  },
+
+  // item:{
+  //     fontSize:20,
+  //     padding:15,
+  //     backgroundColor:"cyan",
+  // }
+
+  input:{
+      backgroundColor:"white",
+      padding:10,
+      borderWidth:2,
+      borderRadius:10,
+      marginTop:10,
+      marginBottom:10,
+
+  }
+})

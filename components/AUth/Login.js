@@ -1,10 +1,7 @@
 import { View, Text, Image, TouchableOpacity, TextInput, Button } from "react-native";
-import * as Animatable from "react-native-animatable";
 import React, { useLayoutEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
 import { SafeAreaView } from "react-native-safe-area-context";
-// import { HeroImage } from "../assets";
-// import {styles} from "../../style";
 import { StyleSheet } from "react-native";
 
 const HomeScreen = () => {
