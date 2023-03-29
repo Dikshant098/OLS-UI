@@ -1,0 +1,6 @@
+export {default as HeroImage} from "./png1.png"
+export {default as Avatar} from "./avatar.png"
+export {default as Hotels} from "./png2.png"
+export {default as Attractions} from "./png1.png"
+export {default as Restaurants} from "./png2.png"
+export {default as NotFound} from "./NotFound.png"
